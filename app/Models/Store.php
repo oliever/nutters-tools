@@ -9,4 +9,5 @@ use Illuminate\Database\Eloquent\SoftDeletes;
 class Store extends Model
 {
     use HasFactory;
+    use SoftDeletes;
 }
