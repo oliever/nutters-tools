@@ -1,8 +1,6 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\Email\AddEmailController;
-use App\Http\Controllers\Email\GetEmailStoresController;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,6 +16,3 @@ use App\Http\Controllers\Email\GetEmailStoresController;
 Route::get('/', function () {
     return view('welcome');
 });
-
-Route::post('/emailAddresses/ajaxAdd.json', AddEmailController::class);
-Route::post('/stores/getStores.json', GetEmailStoresController::class);
