@@ -78,6 +78,11 @@ return [
                 'log',
             ],
         ],
+        
+        'mailjet' => [
+            'transport' => 'mailjet',
+        ],
+        
     ],
 
     /*
