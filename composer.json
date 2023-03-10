@@ -10,7 +10,9 @@
         "jeffgreco13/filament-breezy": "v1.4.10.1",
         "laravel/framework": "^9.19",
         "laravel/sanctum": "^3.0",
-        "laravel/tinker": "^2.7"
+        "laravel/tinker": "^2.7",
+        "mailjet/laravel-mailjet": "^3.0",
+        "symfony/http-client": "^6.0"
     },
     "require-dev": {
         "fakerphp/faker": "^1.9.1",

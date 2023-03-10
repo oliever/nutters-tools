@@ -20,6 +20,7 @@ class AddEmailController extends Controller
     {
         info($request);
         $email = new EmailAddress($request['data']);
+        $email->web_subs = false;
         info($email);
         $email->save();
         

@@ -16,6 +16,7 @@ class GetEmailStoresController extends Controller
      */
     public function __invoke(Request $request)
     {
+        info('invoking GetEmailStoresController...');
         info($request);
         return Store::get();
     }

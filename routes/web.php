@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\Email\AddEmailController;
+use App\Http\Controllers\Email\GetEmailStoresController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,9 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    //return view('welcome');
+    return redirect('/admin');
 });
+
+Route::post('/emailAddresses/ajaxAdd.json', AddEmailController::class);
+Route::get('/stores/getStores.json', GetEmailStoresController::class);
